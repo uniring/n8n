@@ -144,7 +144,7 @@ export class FromAiOverride implements ParameterOverride {
 
 export function makeOverrideValue(
 	context: OverrideContext,
-	nodeType: INodeTypeDescription | null,
+	nodeType: INodeTypeDescription | null | undefined,
 ): ParameterOverride | null {
 	if (!nodeType) return null;
 
