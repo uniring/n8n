@@ -196,6 +196,7 @@ export const formFields: INodeProperties = {
 					noDataExpression: true,
 					default: placeholder,
 					description: 'HTML elements to display on the form page',
+					hint: 'Does not accept <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or <code>&lt;input&gt;</code> tags',
 					displayOptions: {
 						show: {
 							fieldType: ['html'],
@@ -237,18 +238,6 @@ export const formFields: INodeProperties = {
 					displayOptions: {
 						show: {
 							fieldType: ['date'],
-						},
-					},
-				},
-				{
-					displayName:
-						'Does not accept <code>&lt;script&gt;</code>, <code>&lt;style&gt;</code> or <code>&lt;input&gt;</code> tags',
-					name: 'htmlLimitations',
-					type: 'notice',
-					default: '',
-					displayOptions: {
-						show: {
-							fieldType: ['html'],
 						},
 					},
 				},
